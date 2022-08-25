@@ -1,0 +1,17 @@
+// .projects {
+//   position: relative;
+//   width: 500%;
+//   display: flex;
+//   flex-wrap: nowrap;
+//   flex-shrink: 0;
+// }
+
+.projects {
+  overflow-x: hidden;
+}
+
+.projects_element_wrapper {
+  display: flex;
+  width: 500% !important;
+  flex-wrap: nowrap;
+}

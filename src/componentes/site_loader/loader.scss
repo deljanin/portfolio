@@ -3,14 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: radial-gradient(#180018, #000000);
 }
 .loader_text {
   position: absolute;
   text-align: center;
-  font-size: calc(10px + 15 * ((100vw - 300px) / (1600 - 300)));
+  font-size: 1.5em;
+  font-family: "Exo";
+  font-style: normal;
+
   color: white;
 }
 
@@ -41,6 +44,7 @@
     transform: rotate(360deg);
   }
 }
+
 // .loader {
 //   position: relative;
 //   display: flex;

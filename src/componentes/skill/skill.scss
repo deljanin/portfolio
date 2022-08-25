@@ -1,0 +1,51 @@
+.skill {
+  height: 240px;
+  width: 270px;
+  background-color: #292929;
+  border-radius: 39px;
+  transition: all 0.2s;
+  cursor: default;
+}
+.skill:hover {
+  transform: scale(1.01);
+  box-shadow: -7px 7px 14px #ff00ff;
+}
+.skill__title_text_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: -2px;
+  margin-right: -2px;
+}
+
+.skill__title {
+  color: #ff00ff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  width: fit-content;
+}
+.skill__icon_wrapper {
+  display: grid;
+  place-items: center;
+  border: 5px solid #eaeaea;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+.skill__icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+.skill__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #eaeaea;
+  margin: 20px 15px 0 15px !important;
+  font-size: 17.5px;
+  line-height: 25px;
+  letter-spacing: 1.3px;
+}

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import * as thre from "three";
-import * as dat from "dat.gui";
 import React from "react";
 import "./sphere_scene.scss";
+import { MdArrowBackIosNew } from "react-icons/md";
 
 let scene;
 function SphereScene() {
@@ -28,13 +28,13 @@ function SphereScene() {
     // const gui = new dat.GUI();
 
     // Basic stuff here
+    const canvas = document.getElementById("cvs");
     scene = new thre.Scene();
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    let width = canvas.clientWidth;
+    let height = canvas.clientHeight;
     const camera = new thre.PerspectiveCamera(75, width / height, 0.1, 1000);
     camera.position.z = 2;
 
-    const canvas = document.getElementById("cvs");
     const renderer = new thre.WebGLRenderer({
       canvas,
       antialias: true,
@@ -43,14 +43,25 @@ function SphereScene() {
     renderer.setSize(width, height);
     document.body.appendChild(renderer.domElement);
     // Makes 3d stuff responsive
-    window.addEventListener("resize", () => {
-      width = window.innerWidth;
-      height = window.innerHeight;
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
-      renderer.setSize(width, height);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    });
+    // window.addEventListener("resize", () => {
+    //   width = canvas.clientWidth;
+    //   height = canvas.clientHeight;
+    //   camera.aspect = width / height;
+    //   camera.updateProjectionMatrix();
+    //   renderer.setSize(width, height);
+    //   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    // });
+    function resizeRendererToDisplaySize(renderer) {
+      const canvas = renderer.domElement;
+      const pixelRatio = window.devicePixelRatio;
+      const width = (canvas.clientWidth * pixelRatio) | 0;
+      const height = (canvas.clientHeight * pixelRatio) | 0;
+      const needResize = canvas.width !== width || canvas.height !== height;
+      if (needResize) {
+        renderer.setSize(width, height, false);
+      }
+      return needResize;
+    }
     ///////////////////////////////////////////////////////////
     // Lights
     const pointLight1 = new thre.PointLight(0xffffff, 0.1);
@@ -81,6 +92,7 @@ function SphereScene() {
     material.color = new thre.Color(0x290000);
     // material.color = new thre.Color(0xffffff);
     const sphere = new thre.Mesh(sphereGeometry, material);
+
     scene.add(sphere);
     // Sphere light
     // SUPER SIMPLE GLOW EFFECT
@@ -102,6 +114,7 @@ function SphereScene() {
       wireframe: true,
     });
     const gridSphere = new thre.Mesh(gridSphereGeometry, gridSphereMaterial);
+
     scene.add(gridSphere);
 
     // PARTICLES SPHERE
@@ -116,6 +129,7 @@ function SphereScene() {
       particleSphereGeometry,
       particlesSphereMaterial
     );
+
     scene.add(particleSphere);
     // PARTICLES
     const particlesGeometry = new thre.BufferGeometry();
@@ -142,21 +156,36 @@ function SphereScene() {
 
     // const hoverColor = new thre.Color(0xff88ff);
 
-    var m = 0.002;
-    function animateObject(obj) {
-      obj.position.z += m;
+    // let m = 0.002;
+    // function animateObject(obj) {
+    //   obj.position.z += m;
 
-      if (obj.position.z > 0.25) {
-        // obj.position.z -= 0.002;
-        m = -0.002;
-      }
-      if (obj.position.z < -0.2) {
-        // obj.position.z = -3;
-        m = 0.002;
+    //   if (obj.position.z > 0.24) {
+    //     // obj.position.z -= 0.002;
+    //     m = -0.002;
+    //   }
+    //   if (obj.position.z < -0.2) {
+    //     // obj.position.z = -3;
+    //     m = 0.002;
+    //   }
+    // }
+    let s = 0.0003;
+    function animateObject(obj) {
+      obj.scale.x += s;
+      obj.scale.y += s;
+      obj.scale.z += s;
+
+      if (obj.scale.z > 1.1 || obj.scale.z < 0.9) {
+        s = -s;
       }
     }
 
     const animate = () => {
+      if (resizeRendererToDisplaySize(renderer)) {
+        const canvas = renderer.domElement;
+        camera.aspect = canvas.clientWidth / canvas.clientHeight;
+        camera.updateProjectionMatrix();
+      }
       targetX = mouseX * 0.001;
       targetY = mouseY * 0.001;
 
@@ -199,13 +228,28 @@ function SphereScene() {
   // On load/ on mount animate
   return (
     <>
-      <div className="sphere__container"></div>
-      <div className="grid">
-        <span className="mainText">Petar Deljanin</span>
-        <span className="mainSubText">Software Engineer</span>
-        {/* <span className="dragDown"></span> */}
+      <div className="sphere__container" id="sphere_section">
+        {/* <span className="sphere__mail">
+          <a href="mailto:petar.deljanin@hotmail.com">
+            petar.deljanin@hotmail.com
+          </a>
+        </span> */}
+        <div className="sphere__grid">
+          <div className="sphere__wrapper">
+            <h1 className="sphere__mainText general__text_gradiant">
+              I can give your business a new
+              <br /> creative start right away!
+            </h1>
+            <h3 className="sphere__mainSubText general__text_gradiant">
+              Petar Deljanin
+            </h3>
+            <span className="sphere__dragDown"></span>
+            <MdArrowBackIosNew className="sphere__arrowDown" />
+          </div>
+        </div>
+
+        <canvas id="cvs" />
       </div>
-      <canvas id="cvs" />
     </>
   );
 }
