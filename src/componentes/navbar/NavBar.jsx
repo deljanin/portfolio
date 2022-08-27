@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./navbar.scss";
 import logoImg from "../../assets/images/P_logo2.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -17,6 +17,7 @@ const NavBar = () => {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
   };
+
   return (
     <nav className="nav">
       <div className="nav_wrapper">

@@ -17,18 +17,18 @@
 .nav {
   position: absolute;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
   z-index: 3;
 }
+
 .nav__brand {
   color: white;
   display: flex;
   align-items: center;
 }
 .nav_wrapper {
-  width: 602px;
+  width: 674px;
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -92,6 +92,7 @@
 }
 
 .nav__icons {
+  margin-right: 1.3em;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

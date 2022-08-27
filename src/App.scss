@@ -9,29 +9,14 @@
 .general__drop_shadow {
   box-shadow: -7px 7px 14px #5e5e5e;
 }
-
-.general__page_transtion {
-  transition: 5s all ease-in-out;
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+.general__text_highlight {
+  background-image: linear-gradient(126deg, #4e013f, #707eff);
+  // background-image: linear-gradient(144deg, #ff6da5, #ff8a58);
+  // font-family: "Satoshi variable", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  // text-shadow: 0 0 30px rgba(231, 94, 101, 0.4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

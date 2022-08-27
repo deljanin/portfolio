@@ -8,7 +8,10 @@
       "Used HTML, CSS, Bootstrap 4, JavaScript, Node.js and Ajax."
     ],
     "image_array": ["project1_1.jpg", "project1_2.jpg"],
-    "URLS": ["https://youtu.be/qbQrx1EYEc4"]
+    "URLS": [
+      "https://github.com/deljanin/DA_Coaching",
+      "https://youtu.be/qbQrx1EYEc4"
+    ]
   },
   {
     "id": "2",

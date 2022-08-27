@@ -1,22 +1,19 @@
 import React from "react";
-import { useLayoutEffect, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./projects.scss";
 import Project from "../project/Project";
 import projects_data from "../../data/projects_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useState } from "react";
 
 const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const horizontal_section = useRef();
-  const sticky_wrapper = useRef();
   const element_wrapper = useRef();
   const mysections = useRef(new Array());
   useEffect(() => {
     let sections = gsap.utils.toArray(mysections.current);
-
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
@@ -25,7 +22,6 @@ const Projects = () => {
         pin: true,
         scrub: 1,
         snap: 1 / (sections.length - 1),
-        // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
       },
     });

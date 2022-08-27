@@ -1,0 +1,14 @@
+.footer {
+  position: relativel;
+  background-color: #292929;
+  height: 5vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+
+  color: white;
+  div {
+    opacity: 0.05;
+    cursor: pointer;
+  }
+}

@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./imageCarousel.scss";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+
 const ImageCarousel = ({ images, carouselPath }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
