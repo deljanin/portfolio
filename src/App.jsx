@@ -14,11 +14,11 @@ const SphereScene = React.lazy(() =>
 function App() {
   return (
     <>
-      {/* <Suspense fallback={<Loader />}> */}
-      <NavBar />
-      <Loader />
-      {/* <SphereScene /> */}
-      {/* </Suspense> */}
+      <Suspense fallback={<Loader />}>
+        <NavBar />
+        {/* <Loader /> */}
+        <SphereScene />
+      </Suspense>
       <Skills />
       <Projects />
       <AboutMe />
