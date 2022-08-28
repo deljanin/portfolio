@@ -2,25 +2,25 @@
   {
     "id": "1",
     "skill": "Languages",
-    "icon": "src/assets/icons/skills_languages_icon.svg",
+    "icon": "./icons/skills_languages_icon.svg",
     "text": "JAVA, C#, PHP, HTML, CSS, JS, Python, R, C, jQuery, SQL, Bash"
   },
   {
     "id": "2",
     "skill": "Frameworks",
-    "icon": "src/assets/icons/skills_frameworks_icon.svg",
+    "icon": "./icons/skills_frameworks_icon.svg",
     "text": "Git, CodeIgniter, Ajax, Node.js, Bootstrap, SASS, React.js, Three.js"
   },
   {
     "id": "3",
     "skill": "Multimedia",
-    "icon": "src/assets/icons/skills_multimedia_icon.svg",
+    "icon": "./icons/skills_multimedia_icon.svg",
     "text": "Adobe Photoshop, Adobe Illustrator, Kdenlive, Inkscape, Figma"
   },
   {
     "id": "4",
     "skill": "Office Tools",
-    "icon": "src/assets/icons/skills_office_icon.svg",
+    "icon": "./icons/skills_office_icon.svg",
     "text": "Word, Excel, PowerPoint, Docs, Sheets, LaTeX"
   }
 ]

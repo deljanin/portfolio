@@ -31,3 +31,10 @@
 .carousel__button:hover {
   color: #ff00ff;
 }
+
+@media screen and (max-width: 600px) {
+  .carousel__slide {
+    width: 90vw;
+    height: 60vw;
+  }
+}

@@ -2,9 +2,8 @@
   position: relative;
   height: 135vh;
   width: 100vw;
-  background-image: url(../../assets/images/skills_waves_upper.svg),
-    url(../../assets/images/skills_waves_lower.svg),
-    url("../../assets/images/skills_background.svg");
+  background-image: url("/images/skills_waves_upper.svg"),
+    url("/images/skills_waves_lower.svg"), url("/images/skills_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eaeaea;

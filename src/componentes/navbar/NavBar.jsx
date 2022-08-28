@@ -46,7 +46,7 @@ const NavBar = () => {
             </a>
           </button>
           <button className="nav__item">
-            <a href="/Petar_Deljanin_Resume.pdf" className="nav__link">
+            <a href="./Petar_Deljanin_Resume.pdf" className="nav__link">
               Resume
             </a>
           </button>
@@ -61,7 +61,7 @@ const NavBar = () => {
           <a href="https://github.com/deljanin" className="nav_icon">
             <FaGithub />
           </a>
-          <a href="mailto:petar.deljanin@hotmail.com" className="nav_icon">
+          <a href="mailto:petar@deljanin.dev" className="nav_icon">
             <MdMail />
           </a>
         </div>

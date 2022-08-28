@@ -157,11 +157,11 @@ const Contact = () => {
             }}
           ></div>
           <div className="contact__links">
-            <a href="mailto:petar.deljanin@hotmail.com">
+            <a href="mailto:petar@deljanin.dev">
               <div ref={(e) => contactLinks.current.push(e)}>
                 <AiOutlineArrowRight className="contact__arrow_icon" />
                 <MdMail className="contact__icon" />
-                petardeljanin@hotmail.com
+                petar@deljanin.dev
               </div>
             </a>
             <a href="https://t.me/petardeljanin">
@@ -186,7 +186,7 @@ const Contact = () => {
                 deljanin
               </div>
             </a>
-            <a href="/Petar_Deljanin_Resume.pdf">
+            <a href="./Petar_Deljanin_Resume.pdf">
               <div ref={(e) => contactLinks.current.push(e)}>
                 <AiOutlineArrowRight className="contact__arrow_icon" />
                 <BsFileEarmarkPersonFill className="contact__icon" />

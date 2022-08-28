@@ -129,3 +129,22 @@
 .about__anim {
   color: #ff00ff;
 }
+
+@media screen and (max-width: 600px) {
+  .about {
+    height: 100vh;
+    justify-content: center;
+  }
+  .about__middle {
+    // top: -17.5vh;
+  }
+  .about__title_wrapper {
+    margin-top: 0;
+    margin-bottom: 0.05vh;
+    font-size: 1.3em;
+    line-height: 42px;
+  }
+  .about__text {
+    width: 80vw;
+  }
+}

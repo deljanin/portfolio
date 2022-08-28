@@ -17,8 +17,9 @@
 .nav {
   position: absolute;
   width: 100vw;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
 }
 

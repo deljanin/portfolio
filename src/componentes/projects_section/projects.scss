@@ -15,3 +15,12 @@
   width: 500% !important;
   flex-wrap: nowrap;
 }
+
+@media screen and (max-width: 600px) {
+  // .projects_element_wrapper {
+  //   display: flex;
+  //   width: 100% !important;
+  //   // flex-wrap: nowrap;
+  //   flex-direction: column;
+  // }
+}

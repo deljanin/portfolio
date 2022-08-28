@@ -83,7 +83,7 @@ function SphereScene() {
     // Sphere
     const textureLoader = new thre.TextureLoader();
     const sphereGeometry = new thre.SphereBufferGeometry(0.6, 64, 64);
-    const texture = textureLoader.load("./src/assets/images/map2.jpg"); //2,9,3
+    const texture = textureLoader.load("./images/map2.jpg"); //2,9,3
     const material = new thre.MeshStandardMaterial();
     material.metalness = 0.9;
     material.roughness = 0.1;
@@ -98,7 +98,7 @@ function SphereScene() {
     // SUPER SIMPLE GLOW EFFECT
     // use sprite because it appears the same from all angles
     var spriteMaterial = new thre.SpriteMaterial({
-      map: textureLoader.load("./src/assets/images/glow.png"),
+      map: textureLoader.load("./images/glow.png"),
       color: 0xff00ff,
       transparent: true,
       blending: thre.AdditiveBlending,

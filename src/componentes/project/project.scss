@@ -161,3 +161,35 @@
   top: 9vh;
   height: 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .project__main_title {
+    font-size: 2.3em;
+    line-height: 1em;
+  }
+  .project__content_container {
+    flex-direction: column;
+  }
+  .project__title {
+    font-size: 1.5em;
+  }
+  .project__list_container {
+    font-size: 1em;
+  }
+  .project {
+    height: 125vh;
+  }
+  .project__container {
+    justify-content: start;
+  }
+  .project__slideshow_container {
+    width: 80vw;
+    height: 53.3vw;
+  }
+
+  .project_start_line,
+  .project_end_line,
+  .project_between_line {
+    display: none;
+  }
+}
