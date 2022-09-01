@@ -34,7 +34,7 @@ const Projects = () => {
             return (
               <Project
                 key={data.id}
-                bgPath="./images/project_1_bg.svg"
+                // bgPath="./images/project_1_bg.svg"
                 linePath="./images/project_start_line.svg"
                 bgClass="project1_bg"
                 lineClass="project_start_line"
@@ -51,7 +51,7 @@ const Projects = () => {
               <Project
                 key={data.id}
                 mainTitleDisplay="project__no_display"
-                bgPath="./images/project_5_bg.svg"
+                // bgPath="./images/project_5_bg.svg"
                 linePath="./images/project_end_line.svg"
                 bgClass="project5_bg"
                 lineClass="project_end_line"
@@ -69,7 +69,7 @@ const Projects = () => {
               <Project
                 key={data.id}
                 mainTitleDisplay="project__no_display"
-                bgPath={"./images/project_" + imgIndex + "_bg.svg"}
+                // bgPath={"./images/project_" + imgIndex + "_bg.svg"}
                 linePath="./images/project_between_line.svg"
                 bgClass={"project" + imgIndex + "_bg"}
                 lineClass="project_between_line"

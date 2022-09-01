@@ -84,60 +84,74 @@
 }
 
 .project1_bg {
-  position: absolute;
-  left: 0;
-  top: -23vh;
+  background-image: url("/images/project_1_bg.svg");
+  background-repeat: no-repeat;
+  // position: absolute;
+  // left: 0;
+  // top: -23vh;
 
-  object-fit: contain;
-  overflow: hidden;
-  background-size: contain;
-  width: 1300px;
-  height: 1134px;
+  // object-fit: contain;
+  // overflow: hidden;
+  // background-size: contain;
+  // width: 1300px;
+  // height: 1134px;
 }
 
 .project2_bg {
-  position: absolute;
-  left: 0;
-  top: 51vh;
+  background-image: url("/images/project_2_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  // position: absolute;
+  // left: 0;
+  // top: 51vh;
 
-  object-fit: contain;
-  overflow: hidden;
-  background-size: contain;
-  width: 1581px;
-  height: 507px;
+  // object-fit: contain;
+  // overflow: hidden;
+  // background-size: contain;
+  // width: 1581px;
+  // height: 507px;
 }
 .project3_bg {
-  position: absolute;
-  left: 0;
-  top: -23vh;
+  background-image: url("/images/project_3_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  // position: absolute;
+  // left: 0;
+  // top: -23vh;
 
-  object-fit: contain;
-  overflow: hidden;
-  background-size: contain;
-  width: 1647px;
-  height: 1295.85px;
+  // object-fit: contain;
+  // overflow: hidden;
+  // background-size: contain;
+  // width: 1647px;
+  // height: 1295.85px;
 }
 .project4_bg {
-  position: absolute;
-  left: 0;
-  top: 34.3vh;
+  background-image: url("/images/project_4_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  // position: absolute;
+  // left: 0;
+  // top: 34.3vh;
 
-  object-fit: contain;
-  overflow: hidden;
-  background-size: contain;
-  width: 1545px;
-  height: 731px;
+  // object-fit: contain;
+  // overflow: hidden;
+  // background-size: contain;
+  // width: 1545px;
+  // height: 731px;
 }
 .project5_bg {
-  position: absolute;
-  left: -50vw;
-  top: -5vh;
+  background-image: url("/images/project_5_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 130vw;
+  // position: absolute;
+  // left: -50vw;
+  // top: -5vh;
 
-  object-fit: contain;
-  overflow: hidden;
-  background-size: contain;
-  width: 2491px;
-  height: 1805px;
+  // object-fit: contain;
+  // overflow: hidden;
+  // background-size: contain;
+  // width: 2491px;
+  // height: 1805px;
 }
 
 .project_start_line {

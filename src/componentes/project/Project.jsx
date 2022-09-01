@@ -10,7 +10,7 @@ const Project = forwardRef((props, ref) => {
   // gsap.registerPlugin(ScrollTrigger);
   const {
     mainTitleDisplay,
-    bgPath,
+    // bgPath,
     linePath,
     bgClass,
     lineClass,
@@ -57,8 +57,8 @@ const Project = forwardRef((props, ref) => {
   // });
 
   return (
-    <div className="project" ref={ref}>
-      <img src={bgPath} className={bgClass} />
+    <div className={`project ${bgClass}`} ref={ref}>
+      {/* <img src={bgPath} className={bgClass} /> */}
       <img src={linePath} className={lineClass} />
       <div className="project__container">
         <div
