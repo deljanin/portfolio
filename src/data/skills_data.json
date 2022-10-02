@@ -1,26 +1,26 @@
 [
-  {
-    "id": "1",
-    "skill": "Languages",
-    "icon": "./icons/skills_languages_icon.svg",
-    "text": "JAVA, C#, PHP, HTML, CSS, JS, Python, R, C, jQuery, SQL, Bash"
-  },
-  {
-    "id": "2",
-    "skill": "Frameworks",
-    "icon": "./icons/skills_frameworks_icon.svg",
-    "text": "Git, CodeIgniter, Ajax, Node.js, Bootstrap, SASS, React.js, Three.js"
-  },
-  {
-    "id": "3",
-    "skill": "Multimedia",
-    "icon": "./icons/skills_multimedia_icon.svg",
-    "text": "Adobe Photoshop, Adobe Illustrator, Kdenlive, Inkscape, Figma"
-  },
-  {
-    "id": "4",
-    "skill": "Office Tools",
-    "icon": "./icons/skills_office_icon.svg",
-    "text": "Word, Excel, PowerPoint, Docs, Sheets, LaTeX"
-  }
+	{
+		"id": "1",
+		"skill": "Languages",
+		"icon": "./icons/skills_languages_icon.svg",
+		"text": "JAVA, C#, JS, PHP, SQL, HTML, CSS, Sass, Python, R, C, jQuery, Bash"
+	},
+	{
+		"id": "2",
+		"skill": "Libraries",
+		"icon": "./icons/skills_frameworks_icon.svg",
+		"text": "Bootstrap, React.js, Three.js, JAVA Google gson, JAVA.net, JAVA concurrent"
+	},
+	{
+		"id": "3",
+		"skill": "Multimedia",
+		"icon": "./icons/skills_multimedia_icon.svg",
+		"text": "Adobe Photoshop, Adobe Illustrator, Kdenlive, Inkscape, Figma"
+	},
+	{
+		"id": "4",
+		"skill": "Other",
+		"icon": "./icons/skills_office_icon.svg",
+		"text": "Git, Maven, Ajax, Node.js, LaTeX, Microsoft Office, Google Workspace"
+	}
 ]

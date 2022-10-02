@@ -1,40 +1,40 @@
 .carousel__slide {
-  transition: background-image 0.3s ease-in-out;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 32px;
-  width: 40.5vw;
-  height: 27vw;
-  display: flex;
-  .carousel__left {
-    display: grid;
-    place-items: center;
-    flex: 5%;
-  }
-  .carousel__right {
-    display: grid;
-    place-items: center;
-    flex: 5%;
-  }
-  .carousel__middle {
-    flex: 90%;
-  }
+	transition: all 0.5s ease-in-out;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 32px;
+	width: 40.5vw;
+	height: 27vw;
+	display: flex;
+	.carousel__left {
+		display: grid;
+		place-items: center;
+		flex: 5%;
+	}
+	.carousel__right {
+		display: grid;
+		place-items: center;
+		flex: 5%;
+	}
+	.carousel__middle {
+		flex: 90%;
+	}
 }
 .carousel__button {
-  color: rgba($color: #ff00ff, $alpha: 0.6);
-  width: 30px;
-  height: 30px;
-  margin: 0 5px 0 5px;
-  cursor: pointer;
-  transition: all 0.5s;
+	color: rgba($color: #ff00ff, $alpha: 0.6);
+	width: 30px;
+	height: 30px;
+	margin: 0 5px 0 5px;
+	cursor: pointer;
+	transition: all 0.5s;
 }
 .carousel__button:hover {
-  color: #ff00ff;
+	color: #ff00ff;
 }
 
 @media screen and (max-width: 600px) {
-  .carousel__slide {
-    width: 90vw;
-    height: 60vw;
-  }
+	.carousel__slide {
+		width: 90vw;
+		height: 60vw;
+	}
 }

@@ -1,26 +1,29 @@
 // .projects {
 //   position: relative;
-//   width: 500%;
+
 //   display: flex;
-//   flex-wrap: nowrap;
-//   flex-shrink: 0;
+
 // }
 
 .projects {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .projects_element_wrapper {
-  display: flex;
-  width: 500% !important;
-  flex-wrap: nowrap;
+	display: flex;
+	flex-direction: column;
+	height: 400vh;
+	flex-wrap: nowrap;
+	background-image: url('/images/projects_bg.svg');
+	background-size: cover;
+	background-color: #292929;
 }
 
 @media screen and (max-width: 600px) {
-  // .projects_element_wrapper {
-  //   display: flex;
-  //   width: 100% !important;
-  //   // flex-wrap: nowrap;
-  //   flex-direction: column;
-  // }
+	// .projects_element_wrapper {
+	//   display: flex;
+	//   width: 100% !important;
+	//   // flex-wrap: nowrap;
+	//   flex-direction: column;
+	// }
 }

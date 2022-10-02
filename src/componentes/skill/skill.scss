@@ -1,51 +1,66 @@
 .skill {
-  height: 240px;
-  width: 270px;
-  background-color: #292929;
-  border-radius: 39px;
-  transition: all 0.2s;
-  cursor: default;
+	height: 240px;
+	width: 270px;
+	background-color: #292929;
+	border-radius: 39px;
+	transition: all 0.2s;
+	cursor: default;
 }
-.skill:hover {
-  transform: scale(1.01);
-  box-shadow: -7px 7px 14px #ff00ff;
-}
+// .skill:hover {
+// 	transform: scale(1.01);
+// 	box-shadow: -7px 7px 14px #ff00ff;
+// }
 .skill__title_text_wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 15px;
-  margin-top: -2px;
-  margin-right: -2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 15px;
+	margin-top: -2px;
+	margin-right: -2px;
 }
 
 .skill__title {
-  color: #ff00ff;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 29px;
-  width: fit-content;
+	color: #ff00ff;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 29px;
+	width: fit-content;
 }
 .skill__icon_wrapper {
-  display: grid;
-  place-items: center;
-  border: 5px solid #eaeaea;
-  border-radius: 50%;
-  width: 65px;
-  height: 65px;
+	display: grid;
+	place-items: center;
+	border: 5px solid #eaeaea;
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
 }
 .skill__icon {
-  width: 40px !important;
-  height: 40px !important;
+	width: 40px !important;
+	height: 40px !important;
 }
 .skill__text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  color: #eaeaea;
-  margin: 20px 15px 0 15px !important;
-  font-size: 17.5px;
-  line-height: 25px;
-  letter-spacing: 1.3px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	color: #eaeaea;
+	margin: 20px 15px 0 15px !important;
+	font-size: 17.5px;
+	line-height: 25px;
+	letter-spacing: 1.3px;
+}
+.skill__notVisible {
+	opacity: 0;
+	transition: all 0.5s;
+	filter: blur(5px);
+	transform: translateX(calc(-20% * var(--order) - 20%));
+	transition-delay: calc(100ms * var(--order));
+}
+
+.skill__visible {
+	opacity: 1;
+	transition: all 0.5s;
+	filter: blur(0);
+	transform: translateX(0);
+	transition-delay: calc(100ms * var(--order));
 }

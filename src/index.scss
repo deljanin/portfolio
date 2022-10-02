@@ -1,25 +1,31 @@
 :root {
-  font-family: "Source Sans Pro", sans-serif !important;
-  font-weight: 300;
-  font-synthesis: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-weight: 300;
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 a {
-  all: unset !important;
-  cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+		cursor: pointer;
+	}
 }
 ul {
-  padding: 0;
+	padding: 0;
 }
 li {
-  list-style: none;
+	list-style: none;
 }

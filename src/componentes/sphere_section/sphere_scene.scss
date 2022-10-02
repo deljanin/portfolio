@@ -1,124 +1,139 @@
 .sphere__container {
-  position: relative;
-  background: radial-gradient(#130013, #000000);
-  width: 100%;
-  height: 100vh;
-  // z-index: -1;
+	position: relative;
+	background: radial-gradient(#130013, #000000);
+	width: 100vw;
+	height: 100vh;
+	// z-index: -1;
+}
+.sphere__visible {
+	opacity: 1;
+	transition: all 0.6s;
+	filter: blur(0);
+	transform: translateY(0);
+	transition-delay: 100ms;
+}
+.sphere__notVisible {
+	opacity: 0;
+	transition: all 0.6s;
+	filter: blur(10px);
+	transform: translateY(-5%);
+	transition-delay: 100ms;
 }
 
 #cvs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow-x: hidden;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow-x: hidden;
 }
 
 .sphere__grid {
-  display: grid;
-  position: absolute;
-  place-content: center;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
+	display: grid;
+	position: absolute;
+	place-content: center;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
 }
 .sphere__wrapper {
-  display: flex;
-  flex-direction: column;
-  // z-index: 10;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	// z-index: 10;
+	align-items: center;
 }
 .sphere__mainText {
-  cursor: default;
-  font-family: "Exo", sans-serif;
-  font-weight: 300;
-  line-height: 1.2em;
-  margin-bottom: 1vh;
-  margin-top: 4.6vh;
-  font-size: 3em;
-  text-align: center;
-  // color: white;
-  // text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
+	cursor: default;
+	font-family: 'Exo', sans-serif;
+	font-weight: 300;
+	line-height: 1.2em;
+	margin-bottom: 1vh;
+	margin-top: 4.6vh;
+	font-size: 55px;
+	text-align: center;
+	// color: white;
+	// text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
 }
 .sphere__mainSubText {
-  cursor: default;
-  text-align: center;
-  font-family: "Exo", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.23em;
-  color: white;
-  font-size: 1.4em;
-  margin-top: 0;
-  // text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
+	cursor: default;
+	text-align: center;
+	font-family: 'Exo', sans-serif;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: white;
+	font-size: 30px;
+	margin-top: 0;
+	// text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
 }
 
 .sphere__arrowDown {
-  position: absolute;
-  margin-top: 61vh;
-  color: white;
-  transform: rotate(-90deg);
+	position: absolute;
+	margin-top: 61vh;
+	color: white;
+	transform: rotate(-90deg);
 }
 
 .sphere__dragDown {
-  position: absolute;
-  margin-top: 55vh;
-  width: 24px;
-  height: 39px;
-  box-sizing: border-box;
-  border: 2px solid #fff;
+	position: absolute;
+	margin-top: 55vh;
+	width: 24px;
+	height: 39px;
+	box-sizing: border-box;
+	border: 2px solid #fff;
 
-  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+	border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
 }
 .sphere__dragDown::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 2px;
-  background: #fff;
-  border-radius: 10px;
-  animation: scrollDown 1.5s linear infinite;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 2px;
+	background: #fff;
+	border-radius: 10px;
+	animation: scrollDown 1.5s linear infinite;
 }
 @keyframes scrollDown {
-  0% {
-    top: 3px;
-    height: 1px;
-    opacity: 1;
-  }
-  33% {
-    top: 3px;
-    height: 12px;
-  }
-  66% {
-    top: 3px;
-    height: 12px;
-    opacity: 1;
-  }
-  100% {
-    top: 12px;
-    height: 3px;
-    opacity: 0;
-  }
+	0% {
+		top: 3px;
+		height: 1px;
+		opacity: 1;
+	}
+	33% {
+		top: 3px;
+		height: 12px;
+	}
+	66% {
+		top: 3px;
+		height: 12px;
+		opacity: 1;
+	}
+	100% {
+		top: 12px;
+		height: 3px;
+		opacity: 0;
+	}
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .sphere__mainText {
-    margin-top: 5.5vh;
-    font-size: 1.6em;
-  }
-  .sphere__mainSubText {
-    letter-spacing: 0.25em;
-    font-size: 1em;
-    // text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
-  }
-  .sphere__arrowDown {
-    margin-top: 57.5vh;
-  }
+	.sphere__mainText {
+		margin-top: 5.5vh;
+		font-size: 1.6em;
+	}
+	.sphere__mainSubText {
+		letter-spacing: 0.25em;
+		font-size: 1em;
+		// text-shadow: 1px 1px 5px #aa00aa, 1px 1px 5px #aa00aa;
+	}
+	.sphere__arrowDown {
+		margin-top: 57.5vh;
+	}
 
-  .sphere__dragDown {
-    margin-top: 51vh;
-  }
+	.sphere__dragDown {
+		margin-top: 51vh;
+	}
 }
