@@ -225,8 +225,9 @@ function SphereScene() {
 				>
 					<div className='sphere__wrapper'>
 						<h1 className='sphere__mainText general__text_gradiant'>
-							I can give your business a new
-							<br /> creative start right away!
+							{/* I can give your business a new
+							<br /> creative start right away! */}
+							I can design and develop your front-end,<br /> back-end or a full-stack application.
 						</h1>
 						<h3 className='sphere__mainSubText general__text_gradiant'>Petar Deljanin</h3>
 						<span className='sphere__dragDown'></span>

@@ -38,15 +38,14 @@ function AboutMe() {
 						style={{ '--order': 1 }}
 					>
 						Hi, I am <span className='general__text_highlight'>Petar Deljanin</span>, a Serbian
-						software engineer currently based in Slovenia (Europe). I recently finished my
-						undergraduate computer science studies at{' '}
+						software engineer. I finished my undergraduate computer science studies at{' '}
 						<span className='general__text_highlight'>
 							<a href='https://www.famnit.upr.si/en/' target='_blank'>
 								UP FAMNIT{' '}
 							</a>
-						</span>{' '}
-						and I'm currently working in a startup company as a front-end developer.
+						</span>{' '} in Slovenia, and I'm currently looking for a remote position.
 					</p>
+					{/*
 					<p
 						ref={(e) => textLines.current.push(e)}
 						className={textIsVisible ? 'about__text_visible' : 'about__text_notVisible'}
@@ -55,7 +54,8 @@ function AboutMe() {
 						I am looking for a job in Singapore because I want to "start a new life" there, because
 						I think it is a city of future and innovation and because I want to be a part of a team
 						in a world-class software engineering company.
-					</p>
+					</p> 
+					*/}
 					<p
 						ref={(e) => textLines.current.push(e)}
 						className={textIsVisible ? 'about__text_visible' : 'about__text_notVisible'}

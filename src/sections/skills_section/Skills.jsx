@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './skills.scss';
-import Skill from '../skill/Skill';
+import Skill from '../../componentes/skill/Skill';
 import skill_data from '../../data/skills_data.json';
 import useElementOnScreen from '../../hooks/useElementOnScreen';
 
