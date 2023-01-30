@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './project.scss';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
-import ImageCarousel from '../../componentes/carousel/ImageCarousel';
+import ImageCarousel from '../carousel/ImageCarousel';
 import useElementOnScreen from '../../hooks/useElementOnScreen';
 
 const Project = (props) => {
@@ -56,7 +56,7 @@ const Project = (props) => {
 	}
 	return (
 		<div className='project'>
-			{/* <img src={linePath} className={lineClass} /> */}
+			<img src={linePath} className={lineClass} />
 			<div className='project__container'>
 				<div className={`project__main_title ${mainTitleDisplay}`}>My Projects</div>
 				<div className={`project__content_container ${layout}`}>

@@ -9,13 +9,13 @@
 		"id": "2",
 		"skill": "Libraries",
 		"icon": "./icons/skills_frameworks_icon.svg",
-		"text": "Bootstrap, React.js, Three.js, JAVA (Google gson, .net, concurrent)"
+		"text": "Bootstrap, React.js, Three.js, JAVA Google gson, JAVA.net, JAVA concurrent"
 	},
 	{
 		"id": "3",
 		"skill": "Multimedia",
 		"icon": "./icons/skills_multimedia_icon.svg",
-		"text": "Adobe Photoshop, Adobe Illustrator, Adobe XD, Kdenlive, Inkscape, Figma"
+		"text": "Adobe Photoshop, Adobe Illustrator, Kdenlive, Inkscape, Figma"
 	},
 	{
 		"id": "4",
