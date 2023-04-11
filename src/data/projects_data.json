@@ -7,11 +7,24 @@
 			"I developed a forum with custom topics, newsletter subscription and support emailing service.",
 			"Used HTML, CSS, Bootstrap 4, JavaScript, Node.js and Ajax."
 		],
-		"image_array": ["project1_1.jpg", "project1_2.jpg"],
+		"image_array": ["project1_1.jpg"],
 		"URLS": ["https://github.com/deljanin/DA_Coaching", "https://youtu.be/qbQrx1EYEc4"]
 	},
 	{
 		"id": "2",
+		"title": "Spring REST API demo",
+		"text_array": [
+			"This is a back-end Spring 5 project which uses JPA, H2, Lombok, and Mapstruct.",
+			"It also has a Swagger/OpenAPI front-end to demonostrate and document the API endpoints.",
+			"While developing the project I utilized the CircleCi CI/CD pipeline, that I created. ",
+			"I used CodeCov with Jacoco to calculate the test code coverage, which is about 80%.",
+			"You can check out the project by clicking on the link icon below."
+		],
+		"image_array": ["project2_1.jpg"],
+		"URLS": ["https://github.com/deljanin/restfulApiSFG", "https://middleman.deljanin.dev/"]
+	},
+	{
+		"id": "3",
 		"title": "My Barber",
 		"text_array": [
 			"My Barber helps foreigners and tourists with finding a barbershop in their area and with reserving appointments. It helps barbershops with managing their services, appointments and the locations.",
@@ -19,20 +32,8 @@
 			"As a team lead I had to create the presentation and to present the project.",
 			"Used PHP with CodeIgniter, MySQL and XAMPP Server with HTML, CSS, JavaScript and Bootstrap 5."
 		],
-		"image_array": ["project2_1.jpg", "project2_2.jpg", "project2_3.jpg", "project2_4.jpg"],
+		"image_array": ["project3_1.jpg"],
 		"URLS": ["https://github.com/deljanin/BarbershopApp", "https://youtu.be/WqkfgmvCVRs"]
-	},
-	{
-		"id": "3",
-		"title": "Turbo Wash",
-		"text_array": [
-			"Turbo Wash is a desktop application that helps the car washing company with their car washing and cleaning appointments.",
-			"I developed the whole application. User login and register, the car wash appointment creation and display of users appointments. As well as email notifications for registration of accounts and new appointments.",
-			"Used C# with Windows forms and SQL with the Microsoft SQL Server.",
-			"This was my first project."
-		],
-		"image_array": ["project3_1.jpg", "project3_2.jpg"],
-		"URLS": ["https://github.com/deljanin/Turbo_Wash"]
 	},
 	{
 		"id": "4",
@@ -42,7 +43,7 @@
 			"I developed multiple Genetic Algorithms for optimization of the road network. By changing the types of intersections with the help of GAs I was attempting to improve traffic flow.",
 			"Used Java with libraries for the project and R for thesis graphs."
 		],
-		"image_array": ["project4_1.jpg", "project4_2.jpg"],
+		"image_array": ["project4_1.jpg"],
 		"URLS": ["https://github.com/deljanin/diploma"]
 	},
 	{
@@ -54,11 +55,9 @@
 			"Udemy course project. I made an e-commerce website with React and Firebase by following the Udemy tutorial.",
 			"My Fridge: GDSC (Google Developer Student Clubs) Hackaton. We developed the My Fridge web application for minimizing food waste. I developed a web crawler which obtains recipes and ingredients from an other website at the rate of ∼ 4 milliseconds per recipe."
 		],
-		"image_array": ["project5_1.jpg", "project5_2.jpg"],
+		"image_array": ["project5_1.jpg"],
 		"URLS": [
 			"https://github.com/deljanin/portfolio",
-			"https://github.com/deljanin/Button_Game",
-			"https://github.com/deljanin/ReactProject",
 			"https://github.com/deljanin/hackaton"
 		]
 	}

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./project.scss";
-import { FaGithub, FaYoutube } from "react-icons/fa";
-import ImageCarousel from "../carousel/ImageCarousel";
+import { FaGithub, FaYoutube, FaLink } from "react-icons/fa";
+// import ImageCarousel from "../carousel/ImageCarousel";
 import useElementOnScreen from "../../hooks/useElementOnScreen";
 
 const Project = (props) => {
@@ -114,10 +114,19 @@ const Project = (props) => {
                           />
                         </a>
                       );
-                    } else {
+                    } else if (/github/.test(url) === true) {
                       return (
                         <a href={url} key={i}>
                           <FaGithub
+                            className="nav_icon"
+                            style={{ width: "23px", height: "23px" }}
+                          />
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <a href={url} key={i}>
+                          <FaLink
                             className="nav_icon"
                             style={{ width: "23px", height: "23px" }}
                           />
@@ -130,7 +139,13 @@ const Project = (props) => {
             </div>
           </div>
           <div className="project__slideshow_container" ref={slideshow}>
-            <ImageCarousel images={images} carouselPath={carouselPath} />
+            {/* <ImageCarousel images={images} carouselPath={carouselPath} /> */}
+            <div
+              style={{
+                backgroundImage: `url("${carouselPath}/${images[0]}")`,
+              }}
+              className="project__image"
+            ></div>
           </div>
         </div>
       </div>

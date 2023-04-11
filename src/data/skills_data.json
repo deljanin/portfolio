@@ -9,7 +9,7 @@
 		"id": "2",
 		"skill": "Libraries",
 		"icon": "./icons/skills_frameworks_icon.svg",
-		"text": "Bootstrap, React.js, Three.js, JAVA (Google gson, .net, concurrent)"
+		"text": "Bootstrap, React.js, Three.js, Spring (JDBC, JPA, Hibernate, H2, MVC)"
 	},
 	{
 		"id": "3",
@@ -21,6 +21,6 @@
 		"id": "4",
 		"skill": "Other",
 		"icon": "./icons/skills_office_icon.svg",
-		"text": "Git, Maven, Ajax, Node.js, LaTeX, Microsoft Office, Google Workspace"
+		"text": "Git, Maven, Gradle, npm, Node.js, Postman, Docker, OpenAPI, XML, JSON"
 	}
 ]
